@@ -20,11 +20,11 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
 
-        // Room schema 导出目录
-        ksp {
-            arg("room.schemaLocation", "$projectDir/schemas")
-        }
+    // Room schema 导出目录
+    ksp {
+        arg("room.schemaLocation", "$projectDir/schemas")
     }
 
     buildTypes {
