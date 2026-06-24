@@ -1,0 +1,162 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "type": "SINGLE_CHOICE",
+      "category": "Android",
+      "difficulty": "MEDIUM",
+      "tags": ["Activity", "生命周期"],
+      "question": "Activity 的 onCreate() 方法在什么时候被调用？",
+      "options": [
+        "Activity 第一次创建时",
+        "Activity 从后台返回前台时",
+        "Activity 被销毁时",
+        "Activity 暂停时"
+      ],
+      "answer": "0",
+      "explanation": "onCreate() 在 Activity 第一次创建时调用，用于初始化操作。"
+    },
+    {
+      "id": "2",
+      "type": "SINGLE_CHOICE",
+      "category": "Android",
+      "difficulty": "EASY",
+      "tags": ["Jetpack Compose", "基础"],
+      "question": "Jetpack Compose 是用什么语言编写的？",
+      "options": [
+        "Java",
+        "Kotlin",
+        "C++",
+        "Dart"
+      ],
+      "answer": "1",
+      "explanation": "Jetpack Compose 是用 Kotlin 编写的现代 UI 工具包。"
+    },
+    {
+      "id": "3",
+      "type": "SINGLE_CHOICE",
+      "category": "Kotlin",
+      "difficulty": "MEDIUM",
+      "tags": ["协程", "异步"],
+      "question": "Kotlin 协程中，launch 和 async 的主要区别是什么？",
+      "options": [
+        "launch 有返回值，async 没有",
+        "launch 没有返回值，async 有返回值",
+        "两者完全相同",
+        "async 不能用于异步操作"
+      ],
+      "answer": "1",
+      "explanation": "launch 返回 Job 对象，不产生结果值；async 返回 Deferred 对象，可以通过 await() 获取结果。"
+    },
+    {
+      "id": "4",
+      "type": "SINGLE_CHOICE",
+      "category": "Android",
+      "difficulty": "HARD",
+      "tags": ["Room", "数据库"],
+      "question": "在 Room 中，以下哪个注解用于标记数据库实体？",
+      "options": [
+        "@Database",
+        "@Dao",
+        "@Entity",
+        "@Query"
+      ],
+      "answer": "2",
+      "explanation": "@Entity 注解用于标记数据库实体类，@Database 用于标记数据库类，@Dao 用于标记数据访问对象。"
+    },
+    {
+      "id": "5",
+      "type": "TRUE_FALSE",
+      "category": "Kotlin",
+      "difficulty": "EASY",
+      "tags": ["基础", "语法"],
+      "question": "Kotlin 中的 var 关键字声明的变量是不可变的。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "1",
+      "explanation": "错误。var 声明的是可变变量，val 声明的才是不可变变量（只读变量）。"
+    },
+    {
+      "id": "6",
+      "type": "MULTIPLE_CHOICE",
+      "category": "Android",
+      "difficulty": "MEDIUM",
+      "tags": ["Jetpack", "架构组件"],
+      "question": "以下哪些是 Android Jetpack 的组件？（多选）",
+      "options": [
+        "ViewModel",
+        "LiveData",
+        "Room",
+        "Retrofit"
+      ],
+      "answer": "0,1,2",
+      "explanation": "ViewModel、LiveData 和 Room 都是 Jetpack 的架构组件。Retrofit 是 Square 公司开发的网络库，不属于 Jetpack。"
+    },
+    {
+      "id": "7",
+      "type": "SINGLE_CHOICE",
+      "category": "Android",
+      "difficulty": "MEDIUM",
+      "tags": ["Material Design", "UI"],
+      "question": "Material Design 3 中，主题色系统包含几种关键颜色角色？",
+      "options": [
+        "3种",
+        "5种",
+        "7种",
+        "10种"
+      ],
+      "answer": "1",
+      "explanation": "Material Design 3 的主题色系统包含 5 种关键颜色角色：Primary、Secondary、Tertiary、Error 和 Neutral。"
+    },
+    {
+      "id": "8",
+      "type": "SINGLE_CHOICE",
+      "category": "Kotlin",
+      "difficulty": "HARD",
+      "tags": ["Flow", "响应式编程"],
+      "question": "Kotlin Flow 中，以下哪个操作符用于转换流中的每个元素？",
+      "options": [
+        "collect",
+        "map",
+        "filter",
+        "flatMap"
+      ],
+      "answer": "1",
+      "explanation": "map 操作符用于转换流中的每个元素。collect 用于收集流，filter 用于过滤，flatMap 用于将每个元素转换为流。"
+    },
+    {
+      "id": "9",
+      "type": "SINGLE_CHOICE",
+      "category": "Android",
+      "difficulty": "EASY",
+      "tags": ["基础", "四大组件"],
+      "question": "Android 的四大组件不包括以下哪个？",
+      "options": [
+        "Activity",
+        "Service",
+        "Fragment",
+        "BroadcastReceiver"
+      ],
+      "answer": "2",
+      "explanation": "Android 四大组件是 Activity、Service、BroadcastReceiver 和 ContentProvider。Fragment 不是四大组件。"
+    },
+    {
+      "id": "10",
+      "type": "SINGLE_CHOICE",
+      "category": "Kotlin",
+      "difficulty": "MEDIUM",
+      "tags": ["作用域函数", "标准库"],
+      "question": "Kotlin 中，let、run、with、apply、also 这些作用域函数中，哪个返回的是 lambda 的结果？",
+      "options": [
+        "apply",
+        "also",
+        "let",
+        "所有都是"
+      ],
+      "answer": "2",
+      "explanation": "let、run、with 返回 lambda 的结果，而 apply 和 also 返回上下文对象本身。"
+    }
+  ]
+}
